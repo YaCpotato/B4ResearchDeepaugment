@@ -22,7 +22,7 @@ def main():
 
     run_full_model(
         X, y, test_proportion=0.1,
-        model="wrn_40_2", epochs=100, batch_size=32,
+        model="wrn_28_10", epochs=100, batch_size=32,
         policies_path="/home/acb11354uz/B4researchMain/B4ResearchDeepaugment/reports/best_policies/top20_policies_cifar10_exp_2019-02-08_03-54_3000_iters.csv"
     )
 
