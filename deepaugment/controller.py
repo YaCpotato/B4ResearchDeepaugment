@@ -4,26 +4,26 @@ import skopt
 import numpy as np
 
 AUG_TYPES = [
-    "crop",
-    "gaussian-blur",
-    "rotate",
-    "shear",
-    "translate-x",
-    "translate-y",
-    "sharpen",
-    "emboss",
-    "additive-gaussian-noise",
+    "crop",#check
+    "gaussian-blur",#check
+    "rotate",#check
+    "shear",#check
+    "translate-x",#check
+    "translate-y",#check
+    "sharpen",#check
+    "emboss",#check
+    "additive-gaussian-noise",#check
     "dropout",
     "coarse-dropout",
-    "gamma-contrast",
-    "brighten",
-    "invert",
-    "fog",
-    "clouds",
+    "gamma-contrast",#check
+    "brighten",#check
+    "invert",#check
+    "fog",#check
+    "clouds",#check
     "add-to-hue-and-saturation",
-    "coarse-salt-pepper",
-    "horizontal-flip",
-    "vertical-flip",
+    "coarse-salt-pepper",#check
+    "horizontal-flip",#check
+    "vertical-flip",#check
 ]
 
 
