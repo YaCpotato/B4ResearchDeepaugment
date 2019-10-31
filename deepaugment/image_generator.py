@@ -2,7 +2,7 @@ import keras
 
 import numpy as np
 import pandas as pd
-
+import matplotlib.pyplot as plt
 
 import sys
 from os.path import dirname, realpath
@@ -120,7 +120,7 @@ def deepaugment_image_generator(X, y, policy, batch_size=64, augment_chance=0.5)
     print("Policies are:")
     print(policy)
     print()
-
+    count = 0
     while True:
         ix = np.arange(len(X))
         np.random.shuffle(ix)
@@ -150,6 +150,9 @@ def deepaugment_image_generator(X, y, policy, batch_size=64, augment_chance=0.5)
 
                     aug_X = np.concatenate([aug_X, aug_data["X_train"]])
                     aug_y = np.concatenate([aug_y, aug_data["y_train"]])
+                    if count %10 == 0:
+                        plt.imshow(aug_X)
+                        plt.savefig('num'+count+'.png')
                 else:
                     aug_X = np.concatenate([aug_X, tiny_X])
                     aug_y = np.concatenate([aug_y, tiny_y])
