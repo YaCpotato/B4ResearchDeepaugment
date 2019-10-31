@@ -95,6 +95,9 @@ def run_full_model(images, labels, test_proportion=0.1, model="wrn_28_10", epoch
             batch_size=batch_size,
             augment_chance=0.8,
         )
+        file = open('datagen.txt', 'w')
+        file.write(datagen)
+        file.close()
         print("fitting the model")
 
         history = full_model.fit_with_generator(
