@@ -11,7 +11,7 @@ python-dotenv>=0.5.1
 
 # requirements for imgaug library
 six
-numpy>=1.15,<1.16
+numpy>=1.15,<1.23
 scipy
 Pillow
 matplotlib
